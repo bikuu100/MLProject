@@ -32,8 +32,8 @@ This project leverages machine learning techniques to predict student performanc
 ├── data                       # Directory for storing data
 │   └── student_performance.csv
 ├── notebooks                  # Jupyter notebooks for data exploration and analysis
-│   └── EDA.ipynb
-├── src                        # Source code for data processing and model training
+│   └── EDA.ipynb & Model Training.ipynb
+├── try                        # Source code for data processing and model training
 │   ├── preprocess.py
 │   ├── train_model.py
 │   └── predict_pipeline.py
@@ -45,7 +45,7 @@ This project leverages machine learning techniques to predict student performanc
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/student-performance-indicator.git
+    git clone https://github.com/bikuu100/MLProject.git
     cd student-performance-indicator
     ```
 
@@ -118,8 +118,7 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-For any questions or suggestions, please contact [your-name](mailto:your-email@example.com).
+For any questions or suggestions, please contact Bikash Kushwaha(mailto:kushwahabikash875@gmail.com).
 
 ---
 
-Feel free to customize this README with specific details and adjust the structure according to your preferences. Make sure to replace placeholders like `your-username`, `your-email@example.com`, and any other specifics with your actual information.
