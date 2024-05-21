@@ -7,6 +7,7 @@ from sklearn.linear_model import LinearRegression
 from xgboost import XGBRegressor
 from catboost import CatBoostRegressor
 from sklearn.metrics import r2_score
+import joblib 
 
 def define_models():
     # Define the models and their hyperparameters
@@ -93,6 +94,9 @@ def fit_models(X_train, y_train):
             best_model = model
 
         best_estimators[name] = best_model
+
+        joblib.dump(best_model, f"try_train_test_split_function/{name}_model.pkl")
+
 
     return best_estimators
 
