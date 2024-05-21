@@ -54,10 +54,21 @@ x_train_preprocessed = preprocessor.fit_transform(x_train)
 # Transform x_test
 x_test_preprocessed = preprocessor.transform(x_test)
 
-train_arr = np.c_[
-                x_train_preprocessed, np.array(y_train)
-            ]
-test_arr = np.c_[x_test_preprocessed, np.array(y_test)]
+import pandas as pd
+
+# Assuming x_train_preprocessed and x_test_preprocessed are numpy arrays or similar
+# If they are numpy arrays, you can convert them to DataFrames
+
+# Convert to DataFrame
+x_train_preprocessed_df = pd.DataFrame(x_train_preprocessed)
+x_test_preprocessed_df = pd.DataFrame(x_test_preprocessed)
+
+# Save to CSV
+x_train_preprocessed_df.to_csv('try_train_test_split_function/x_train_preprocessed.csv', index=False)
+x_test_preprocessed_df.to_csv('try_train_test_split_function/x_test_preprocessed.csv', index=False)
+
+print("Preprocessed training and testing data saved successfully.")
+
 
 directory = 'try_train_test_split_function'
 
@@ -76,3 +87,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
